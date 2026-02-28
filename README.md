@@ -1,36 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎓 Exam Stack: Master Your Exams. Stack Your A’s.Exam Stack is a premium, AI-powered academic repository designed to eliminate the "scavenger hunt" of exam preparation. It centralizes fragmented past questions and provides context-aware AI explanations tailored specifically to your department's course materials.
 
-## Getting Started
+🚀 The VisionEvery semester, students waste countless hours hunting for past questions across WhatsApp groups and blurry PDFs. Exam Stack stops the hunt so you can start the learning. We don't just provide the papers; we provide the structure and intelligence needed to spot patterns and master examiner logic.
 
-First, run the development server:
+✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔍 Centralized VaultNo More Scattered Files: A high-resolution, searchable database of past questions organized by department, course code, and year.Smart Indexing: Every upload is accurately labeled to ensure students find exactly what they need in seconds.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧠 Context-Aware AIPDF-Grounded Logic: Unlike generic AI, our system is trained on your specific course materials. It provides answers based on your lecturer's definitions and textbook content.Pattern Recognition: Our analytics engine flags recurring topics and high-frequency questions so you know where to focus your effort.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⚡ Seamless Onboarding Step-by-Step Path: Simple "Sign In → Upload → Access" flow designed for busy students.Community Driven: A shared ecosystem where students contribute materials to build the ultimate resource for their peers.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
