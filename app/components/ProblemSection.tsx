@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
-import { Search, BrainIcon, LayoutGrid, ArrowRight, FileWarning } from 'lucide-react';
+import { Search, BrainIcon, LayoutGrid, ArrowRight } from 'lucide-react';
 
 const ProblemSection: React.FC = () => {
   // Staggered container animation
@@ -114,7 +114,8 @@ const ProblemSection: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 bg-[#0B1120]/90 backdrop-blur-md rounded-xl p-12 md:p-20 text-center relative overflow-hidden group"
+          className="mt-20 bg-cover bg-no-repeat bg-center backdrop-blur-md rounded-xl p-12 md:p-20 text-center relative overflow-hidden group "
+           style={{ backgroundImage: `url('https://img.freepik.com/free-photo/students-studying-together-medium-shot_23-2148913227.jpg')` }}
         >
           {/* Animated Gradient Glow */}
           <motion.div 
@@ -125,7 +126,9 @@ const ProblemSection: React.FC = () => {
             transition={{ duration: 8, repeat: Infinity }}
             className="absolute -top-20 -right-20 w-96 h-96 bg-[#D4AF37] rounded-full blur-[120px]" 
           />
-          
+          <div className='bg-black/70 inset-0 absolute top-0'>
+
+          </div>
           <div className="relative z-10 max-w-3xl mx-auto">
             <h4 className="text-[#F1F5F9] text-3xl md:text-4xl font-bold mb-8 leading-tight">
               "Students don't lack effort. <br /> They lack <span className="text-[#D4AF37]">Structure</span>."
