@@ -21,7 +21,7 @@ const HeroPage: React.FC = () => {
   });
 
   return (
-    <section className="bg-[#0B1120] text-[#F1F5F9] min-h-screen flex flex-col lg:flex-row  justify-around   items-end  overflow-hidden relative  gap-5 lg:gap-10 max-w-7xl mx-auto pt-30 lg:pt-16 px-5 lg:px-10">
+    <section className="bg-[#0B1120] text-[#F1F5F9] min-h-screen flex flex-col lg:flex-row  justify-between lg:justify-around   items-end  overflow-hidden relative  gap- lg:gap-10 max-w-7xl mx-auto pt-30 lg:pt-16 px-5 lg:px-10">
       
       {/* Left Content Area */}
       <motion.div 

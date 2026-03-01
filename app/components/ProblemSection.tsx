@@ -114,7 +114,7 @@ const ProblemSection: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 bg-cover bg-no-repeat bg-center backdrop-blur-md rounded-xl p-12 md:p-20 text-center relative overflow-hidden group "
+          className="mt-20 bg-cover bg-no-repeat bg-center backdrop-blur-md rounded-xl px-6 py-10 md:p-20 text-center relative overflow-hidden group "
            style={{ backgroundImage: `url('https://img.freepik.com/free-photo/students-studying-together-medium-shot_23-2148913227.jpg')` }}
         >
           {/* Animated Gradient Glow */}
@@ -137,7 +137,7 @@ const ProblemSection: React.FC = () => {
               Don't let scattered PDFs and generic AI answers  cost you your grades.  <br /> It's time to study with context.
             </p>
             
-            <button className="flex items-center gap-3 bg-[#D4AF37] text-[#0B1120] px-10 py-2.5 rounded-full font-bold text-xs uppercase tracking-[0.2em] mx-auto hover:bg-[#F1F5F9] hover:scale-105 transition-all shadow-sm  cursor-pointer">
+            <button className="flex items-center gap-3 bg-[#D4AF37] text-[#0B1120] px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-[0.2em] mx-auto hover:bg-[#F1F5F9] hover:scale-105 transition-all shadow-sm  cursor-pointer">
               Get Started for Free
               <ArrowRight size={16} />
             </button>
