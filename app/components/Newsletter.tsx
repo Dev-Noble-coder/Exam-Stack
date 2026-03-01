@@ -5,12 +5,12 @@ import { Send, Sparkles } from 'lucide-react';
 
 const Newsletter: React.FC = () => {
   return (
-    <section className="bg-[#F1F5F9] py-20 px-10">
+    <section className="bg-[#F1F5F9] py-10 lg:py-20 px-5 lg:px-10">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto bg-[#0B1120]/90 backdrop-blur-md rounded-xl p-10 md:p-20 relative overflow-hidden "
+        className="max-w-7xl mx-auto bg-[#0B1120]/90 backdrop-blur-md rounded-xl px-7 py-10 md:p-20 relative overflow-hidden "
       >
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-[100px] -z-0" />

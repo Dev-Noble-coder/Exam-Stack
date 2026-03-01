@@ -5,7 +5,7 @@ import { Layers } from 'lucide-react'
 const NavBar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 border-b border-pink bg-[#0B1120]/90 backdrop-blur-md h-16 flex justify-between">
-      <div className="flex justify-between items-center  px-10 w-full mx-auto">
+      <div className="flex justify-between items-center  px-5 lg:px-10 w-full mx-auto">
         
         {/* Logo Section */}
         <div className="text-2xl font-bold tracking-tight flex items-center gap-1.5">
@@ -28,7 +28,7 @@ const NavBar = () => {
             <Link href="/upload-past-questions" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
               Past Questions
             </Link>
-            <Link href="/contact-us" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
+            <Link href="/contact" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
               Contact
             </Link>
           </div>

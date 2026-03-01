@@ -39,11 +39,11 @@ const SolutionSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#0B1120] py-20 px-10 overflow-hidden">
+    <section className="bg-[#0B1120] py-10 lg:py-20 px-5 lg:px-10 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
-        <div className="text-center mb-24">
+        <div className="text-center mb-15 lg:mb-24">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,14 +57,14 @@ const SolutionSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-[#F1F5F9] text-4xl font-extrabold"
+            className="text-[#F1F5F9] text-3xl lg:text-4xl font-extrabold"
           >
             A Smarter Way to <span className="text-[#D4AF37]">Stack Your A's.</span>
           </motion.h3>
         </div>
 
         {/* Solutions "Stack" */}
-        <div className="space-y-20 relative">
+        <div className="space-y-10 lg:space-y-20 relative">
           {/* Vertical line connector (visible on desktop) */}
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-[#D4AF37]/50 via-[#1E293B] to-transparent hidden md:block" />
 
@@ -123,7 +123,7 @@ const SolutionSection: React.FC = () => {
         <motion.div 
            initial={{ opacity: 0 }}
            whileInView={{ opacity: 1 }}
-           className="mt-32 text-center"
+           className="mt-16lg:mt-32 text-center"
         >
           <p className="text-[#F1F5F9]/40 text-sm mb-6 uppercase tracking-widest">Ready to change how you study?</p>
           <button className="bg-[#D4AF37] text-[#0B1120] px-10 py-2.5 rounded-full text-sm font-medium transition-all shadow cursor-pointer ">

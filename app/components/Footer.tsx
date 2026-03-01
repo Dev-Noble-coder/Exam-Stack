@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-[#0B1120] border-t border-[#F1F5F9]/10 px-10">
+        <footer className="bg-[#0B1120] border-t border-[#F1F5F9]/10 px-5 lg:px-10">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 py-10">
 
                 {/* Logo & Slogan */}
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                     <Link href="/upload-past-questions" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
                         Past Questions
                     </Link>
-                    <Link href="/contact-us" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
+                    <Link href="/contact" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
                         Contact
                     </Link>
                 </div>

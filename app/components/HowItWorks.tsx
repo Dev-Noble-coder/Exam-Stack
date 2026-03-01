@@ -32,11 +32,11 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F1F5F9] py-20 px-10 relative overflow-hidden">
+    <section className="bg-[#F1F5F9] py-10 lg:py-20 px-5 lg:px-10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
-        <div className="text-center mb-24">
+        <div className="text-center mb-15 lg:mb-24">
           <motion.h2 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -50,14 +50,14 @@ const HowItWorks: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-[#0B1120] text-4xl md:text-5xl font-extrabold"
+            className="text-[#0B1120] text-3xl md:text-4xl font-extrabold"
           >
             How It  <span className="text-[#D4AF37]">Works</span>
           </motion.h3>
         </div>
 
         {/* Steps Container */}
-        <div className="relative flex flex-col md:flex-row justify-between items-start gap-12 md:gap-4">
+        <div className="relative flex flex-col md:flex-row justify-between items-center lg:items-start gap-12 md:gap-4">
           
           {/* Desktop Connecting Path (Dashed Line) */}
           <svg className="hidden md:block absolute top-16 left-0 w-full h-20 -z-0" fill="none">

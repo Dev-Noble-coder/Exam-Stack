@@ -44,7 +44,7 @@ const ProblemSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F1F5F9] py-20 px-10 overflow-hidden text-[#0B1120]">
+    <section className="bg-[#F1F5F9] py-10 lg:py-20 px-5 lg:px-10 overflow-hidden text-[#0B1120]">
       <div className="max-w-7xl mx-auto">
         
         {/* Header Content */}
@@ -130,7 +130,7 @@ const ProblemSection: React.FC = () => {
 
           </div>
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h4 className="text-[#F1F5F9] text-3xl md:text-4xl font-bold mb-8 leading-tight">
+            <h4 className="text-[#F1F5F9] text-2xl md:text-4xl font-bold mb-8 leading-tight">
               "Students don't lack effort. <br /> They lack <span className="text-[#D4AF37]">Structure</span>."
             </h4>
             <p className="text-[#F1F5F9]/50 text-sm mb-12 font-light">
