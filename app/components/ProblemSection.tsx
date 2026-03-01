@@ -58,7 +58,7 @@ const ProblemSection: React.FC = () => {
             <h2 className="text-[#D4AF37] font-bold uppercase tracking-[0.25em] text-[11px] mb-5">
               The Preparation Gap
             </h2>
-            <h3 className="text-4xl md:text-6xl font-extrabold leading-[1.1]">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1]">
               Studying Isn’t the Problem. <br />
               <span className="text-[#1E293B]/40">Studying Blind Is.</span>
             </h3>
@@ -80,7 +80,7 @@ const ProblemSection: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-10"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
         >
           {problemCards.map((card, index) => (
             <motion.div
