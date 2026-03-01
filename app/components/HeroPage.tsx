@@ -46,10 +46,10 @@ const HeroPage: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 text-sm justify-center md:justify-start w-full ">
-          <Link href="/search" className="bg-[#D4AF37] text-[#0B1120] px-8 py-2.5 rounded-full font-semibold transition-all hover:bg-[#F1F5F9] active:scale-95 w-full ">
+          <Link href="/search" className="bg-[#D4AF37] text-[#0B1120] px-8 py-2.5 rounded-full font-semibold transition-all hover:bg-[#F1F5F9] active:scale-95 w-full text-center ">
             Find Past Questions
           </Link>
-          <Link href="/how-it-works" className="bg-transparent border border-[#F1F5F9]/30 hover:border-[#F1F5F9] px-8 py-2.5 rounded-full font-semibold transition-all w-full ">
+          <Link href="/how-it-works" className="bg-transparent border border-[#F1F5F9]/30 hover:border-[#F1F5F9] px-8 py-2.5 rounded-full font-semibold transition-all w-full text-center">
             See How It Works
           </Link>
         </div>
