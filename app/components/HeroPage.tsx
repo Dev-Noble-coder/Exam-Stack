@@ -21,14 +21,14 @@ const HeroPage: React.FC = () => {
   });
 
   return (
-    <section className="bg-[#0B1120] text-[#F1F5F9] min-h-screen flex flex-col lg:flex-row  justify-between lg:justify-around   items-end  overflow-hidden relative  gap- lg:gap-10 max-w-7xl mx-auto pt-30 lg:pt-16 px-5 lg:px-10">
+    <section className="bg-[#0B1120] text-[#F1F5F9] min-h-screen flex flex-col lg:flex-row  justify-center lg:justify-around   items-end  overflow-hidden relative  gap- lg:gap-10 max-w-7xl mx-auto  lg:pt-16 px-5 lg:px-10">
       
       {/* Left Content Area */}
       <motion.div 
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="mb-20 z-10 text-center md:text-left self-center"
+        className="mb-20 z-10 text-center lg:text-left  self-center"
       >
         <div className="mb-6 inline-block px-4 py-1 rounded-full border border-[#D4AF37] text-[#D4AF37] text-[10px] font-medium uppercase tracking-widest">
           Smartest way to study
@@ -45,18 +45,18 @@ const HeroPage: React.FC = () => {
           tailored to your department materials.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 text-sm justify-center md:justify-start">
-          <Link href="/search" className="bg-[#D4AF37] text-[#0B1120] px-8 py-2.5 rounded-full font-semibold transition-all hover:bg-[#F1F5F9] active:scale-95">
+        <div className="flex flex-col sm:flex-row gap-4 text-sm justify-center md:justify-start w-full ">
+          <Link href="/search" className="bg-[#D4AF37] text-[#0B1120] px-8 py-2.5 rounded-full font-semibold transition-all hover:bg-[#F1F5F9] active:scale-95 w-full ">
             Find Past Questions
           </Link>
-          <Link href="/how-it-works" className="bg-transparent border border-[#F1F5F9]/30 hover:border-[#F1F5F9] px-8 py-2.5 rounded-full font-semibold transition-all">
+          <Link href="/how-it-works" className="bg-transparent border border-[#F1F5F9]/30 hover:border-[#F1F5F9] px-8 py-2.5 rounded-full font-semibold transition-all w-full ">
             See How It Works
           </Link>
         </div>
       </motion.div>
 
       {/* Right Content: Image & Floating Elements */}
-      <div className="relative flex justify-center items-end ">
+      <div className="relative hidden lg:flex justify-center items-end ">
         
         {/* Soft Background Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#D4AF37]/10 rounded-full blur-[100px] -z-10" />
@@ -94,6 +94,7 @@ const HeroPage: React.FC = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
+      
         >
           <Image 
             src="https://res.cloudinary.com/drhfrgahv/image/upload/v1772141428/indoor-shot-stupefied-dark-skinned-guy-keeps-jaw-dropped-wears-red-clothes-spectacles-carries-textbooks-writes-scientific-report_meaaek.png" 
