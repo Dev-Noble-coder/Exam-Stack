@@ -28,11 +28,8 @@ const Footer: React.FC = () => {
                     <Link href="/" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
                         Home
                     </Link>
-                    <Link href="/upload-course-materials" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
+                    <Link href="/course-materials" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
                         Materials
-                    </Link>
-                    <Link href="/upload-past-questions" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
-                        Past Questions
                     </Link>
                     <Link href="/contact" className="hover:text-[#D4AF37] hover:scale-105 transition-all duration-300">
                         Contact
