@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { Search, BrainIcon, LayoutGrid, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const ProblemSection: React.FC = () => {
   // Staggered container animation
@@ -138,7 +139,9 @@ const ProblemSection: React.FC = () => {
             </p>
             
             <button className="flex items-center gap-3 bg-[#D4AF37] text-[#0B1120] px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-[0.2em] mx-auto hover:bg-[#F1F5F9] hover:scale-105 transition-all shadow-sm  cursor-pointer">
+              <Link href='/sign-in'>
               Get Started for Free
+              </Link>
               <ArrowRight size={16} />
             </button>
           </div>

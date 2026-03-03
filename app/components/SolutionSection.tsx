@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { Database, Brain, BarChart3, CheckCircle2 } from 'lucide-react';
+import Link from 'next/link';
 
 const SolutionSection: React.FC = () => {
   const slideInLeft: Variants = {
@@ -127,7 +128,10 @@ const SolutionSection: React.FC = () => {
         >
           <p className="text-[#F1F5F9]/40 text-sm mb-6 uppercase tracking-widest">Ready to change how you study?</p>
           <button className="bg-[#D4AF37] text-[#0B1120] px-10 py-2.5 rounded-full text-sm font-medium transition-all shadow cursor-pointer ">
-            BUILD YOUR STACK NOW
+            <Link href='/sign-in'>           
+             BUILD YOUR STACK NOW
+            </Link>
+
           </button>
         </motion.div>
       </div>

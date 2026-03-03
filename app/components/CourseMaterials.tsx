@@ -42,7 +42,7 @@ const CourseMaterials = () => {
              className="relative group w-full lg:w-auto "
           >
             <div className="absolute inset-0 bg-[#D4AF37]/20 blur-xl rounded-full transition-all w-full lg:w-auto" />
-            <Link href="/signin" className="relative flex justify-center items-center gap-3 bg-[#D4AF37] text-[#0B1120] px-8 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest shadow w-full lg:w-auto ">
+            <Link href="/sign-in" className="relative flex justify-center items-center gap-3 bg-[#D4AF37] text-[#0B1120] px-8 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest shadow w-full lg:w-auto ">
               Start Building Your Stack
               <ArrowRight size={16} />
             </Link>

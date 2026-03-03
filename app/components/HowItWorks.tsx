@@ -32,7 +32,7 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F1F5F9] py-10 lg:py-20 px-5 lg:px-10 relative overflow-hidden">
+    <section className="bg-[#F1F5F9] py-10 lg:py-20 px-5 lg:px-10 relative overflow-hidden" id='how-it-works'>
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
