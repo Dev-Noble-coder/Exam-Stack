@@ -9,24 +9,35 @@ interface DropzoneProps {
 }
 
 const UploadDropzone = ({ onFileSelect }: DropzoneProps) => {
-  const onDrop = useCallback((acceptedFiles: File[]) => {
+const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles.length > 0) {
       onFileSelect(acceptedFiles[0]);
     }
   }, [onFileSelect]);
 
-const { getRootProps, getInputProps, isDragActive, isDragReject } = useDropzone({
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     accept: { 'application/pdf': ['.pdf'] },
     multiple: false,
   });
 
-  // Extract the props from getRootProps()
-  const { ref, ...rootProps } = getRootProps();
+  // 1. Get the props from Dropzone
+  const dropzoneProps = getRootProps();
 
+  // 2. Destructure and OMIT the conflicting Framer Motion gesture props.
+  // We pull them out so they are NOT part of the '...cleanProps' spread.
+  const { 
+    ref, 
+    onDrag, 
+    onDragStart, 
+    onDragEnd, 
+    onAnimationStart, 
+    ...cleanProps 
+  } = dropzoneProps;
   return (
     <motion.div
-      {...getRootProps()}
+     ref={ref}
+      {...cleanProps}
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.99 }}
       className={`
@@ -34,7 +45,7 @@ const { getRootProps, getInputProps, isDragActive, isDragReject } = useDropzone(
         h-80 w-full rounded-lg border-2 border-dashed transition-all duration-300
         flex flex-col items-center justify-center p-10 text-center
         ${isDragActive ? 'border-[#D4AF37] bg-[#D4AF37]/5' : 'border-slate-200 bg-slate-50 hover:bg-white hover:border-[#D4AF37]/50'}
-        ${isDragReject ? 'border-red-500 bg-red-50' : ''}
+    
       `}
     >
       <input {...getInputProps()} />
@@ -50,9 +61,7 @@ const { getRootProps, getInputProps, isDragActive, isDragReject } = useDropzone(
           w-20 h-20 rounded-full flex items-center justify-center transition-all duration-500
           ${isDragActive ? 'bg-[#D4AF37] text-[#0B1120] rotate-180' : 'bg-[#0B1120] text-[#D4AF37]'}
         `}>
-          {isDragReject ? (
-            <AlertCircle size={32} />
-          ) : isDragActive ? (
+     { isDragActive ? (
             <FilePlus size={32} />
           ) : (
             <UploadCloud size={32} />
@@ -63,11 +72,11 @@ const { getRootProps, getInputProps, isDragActive, isDragReject } = useDropzone(
           <h2 className="text-lg font-black text-[#0B1120] tracking-tight">
             {isDragActive ? "DROP TO STACK" : "DRAG & DROP PAPER"}
           </h2>
-          <p className="text-slate-500 text-xs mt-1 max-w-[240px]">
+          {/* <p className="text-slate-500 text-xs mt-1 max-w-[240px]">
             {isDragReject 
               ? "Only PDF files are accepted" 
               : "Support PDF files up to 20MB. Make sure the text is clear."}
-          </p>
+          </p> */}
         </div>
 
         <button className="mt-4 px-6 py-2.5 bg-white border border-slate-200 rounded-lg text-xs font-bold text-[#0B1120] transition-all">
