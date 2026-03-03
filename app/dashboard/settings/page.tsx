@@ -13,7 +13,7 @@ const SettingsPage = () => {
         {/* Decorative Golden Pattern */}
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_#D4AF37_1px,_transparent_1px)] bg-[size:20px_20px]" />
         
-        <div className="absolute bottom-5 left-10 flex items-end gap-4">
+        <div className="absolute bottom-5 left-5 flex items-end gap-4">
           <div className="relative group">
             <div className="w-26 h-26 rounded-full bg-linear-to-tr from-[#D4AF37] to-[#B8860B] border-4 border-white flex items-center justify-center text-[#0B1120] text-xl font-black shadow-xl">
               JD
@@ -34,13 +34,13 @@ const SettingsPage = () => {
         </div>
 
         {/* Rank Badge */}
-        <div className="absolute top-8 right-10 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-lg flex items-center gap-4">
+        <div className="absolute top-5 right-5 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-lg flex items-center gap-4">
            <div className="p-2 bg-[#D4AF37]/20 rounded-full">
              <Award className="text-[#D4AF37]" size={24} />
            </div>
            <div>
              <p className="text-[10px] font-black text-[#D4AF37] tracking-widest uppercase">Vault Rank</p>
-             <p className="text-white font-bold text-lg">Master Stacker</p>
+             <p className="text-white font-bold text-sm">Master Stacker</p>
            </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ const SettingsPage = () => {
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white rounded-lg border border-slate-200 p-10 "
+            className="bg-white rounded-lg border border-slate-200 p-6  "
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-2">
@@ -122,7 +122,7 @@ const SettingsPage = () => {
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-slate-50 flex justify-end">
+            <div className="lg:mt-8 pt-8 border-t border-slate-50 flex justify-end">
               <button className="flex items-center gap-2 bg-[#D4AF37] text-[#0B1120] px-8 py-3 rounded-full font-medium  transition-all uppercase tracking-widest text-xs cursor-pointer">
                 <Save size={16} />
                 Update Profile
