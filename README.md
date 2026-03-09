@@ -1,12 +1,41 @@
-🎓 Exam Stack: Master Your Exams. Stack Your A’s.Exam Stack is a premium, AI-powered academic repository designed to eliminate the "scavenger hunt" of exam preparation. It centralizes fragmented past questions and provides context-aware AI explanations tailored specifically to your department's course materials.
+# 🎓 Exam Stack: Master Your Exams. Stack Your A’s.
 
-🚀 The VisionEvery semester, students waste countless hours hunting for past questions across WhatsApp groups and blurry PDFs. Exam Stack stops the hunt so you can start the learning. We don't just provide the papers; we provide the structure and intelligence needed to spot patterns and master examiner logic.
+**Exam Stack** is a premium, AI-powered academic repository designed to eliminate the "scavenger hunt" of exam preparation. It centralizes fragmented past questions and provides context-aware AI explanations tailored specifically to your department's course materials.
 
-✨ Key Features
+## 🚀 The Vision
 
-🔍 Centralized VaultNo More Scattered Files: A high-resolution, searchable database of past questions organized by department, course code, and year.Smart Indexing: Every upload is accurately labeled to ensure students find exactly what they need in seconds.
+Every semester, students waste countless hours hunting for past questions across WhatsApp groups and blurry PDFs. Exam Stack stops the hunt so you can start the learning. We don't just provide the papers; we provide the structure and intelligence needed to spot patterns and master examiner logic.
 
-🧠 Context-Aware AIPDF-Grounded Logic: Unlike generic AI, our system is trained on your specific course materials. It provides answers based on your lecturer's definitions and textbook content.Pattern Recognition: Our analytics engine flags recurring topics and high-frequency questions so you know where to focus your effort.
+## ✨ Key Features
 
-⚡ Seamless Onboarding Step-by-Step Path: Simple "Sign In → Upload → Access" flow designed for busy students.Community Driven: A shared ecosystem where students contribute materials to build the ultimate resource for their peers.
+### 🔍 Centralized Vault
+* **No More Scattered Files:** A high-resolution, searchable database of past questions organized by department, course code, and year.
+* **Smart Indexing:** Every upload is accurately labeled to ensure students find exactly what they need in seconds.
 
+### 🧠 Context-Aware AI
+* **PDF-Grounded Logic:** Unlike generic AI, our system is trained on your specific course materials. It provides answers based on your lecturer's definitions and textbook content.
+* **Pattern Recognition:** Our analytics engine flags recurring topics and high-frequency questions so you know where to focus your effort.
+
+### ⚡ Seamless Onboarding
+* **Step-by-Step Path:** Simple "Sign In → Upload → Access" flow designed for busy students.
+* **Community Driven:** A shared ecosystem where students contribute materials to build the ultimate resource for their peers.
+
+## 🛠️ Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page and contribute to making exam preparation better for everyone.
